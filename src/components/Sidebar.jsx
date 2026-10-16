@@ -1,51 +1,30 @@
-import { NavLink } from "react-router-dom";
-
 function Sidebar() {
   return (
-    <aside className="w-60 min-h-screen bg-gray-900 text-white p-5">
+    <aside className="w-64 min-h-screen border-r bg-white p-4">
 
-      <h2 className="text-lg font-semibold mb-8">
-        Menu
-      </h2>
+      <div className="space-y-2">
 
-      <nav className="space-y-3">
+        <button className="w-full text-left px-4 py-3 rounded-lg bg-gray-100 font-medium">
+          🏠 Dashboard
+        </button>
 
-        <NavLink
-          to="/"
-          className="block p-2 rounded hover:bg-gray-800"
-        >
-          Dashboard
-        </NavLink>
+        <button className="w-full text-left px-4 py-3 rounded-lg hover:bg-gray-100">
+          🏘️ Properties
+        </button>
 
-        <NavLink
-          to="/predictions"
-          className="block p-2 rounded hover:bg-gray-800"
-        >
-          Predictions
-        </NavLink>
+        <button className="w-full text-left px-4 py-3 rounded-lg hover:bg-gray-100">
+          🗺️ Explore
+        </button>
 
-        <NavLink
-          to="/reports"
-          className="block p-2 rounded hover:bg-gray-800"
-        >
-          Reports
-        </NavLink>
+        <button className="w-full text-left px-4 py-3 rounded-lg hover:bg-gray-100">
+          📅 My Visits
+        </button>
 
-        <NavLink
-          to="/alerts"
-          className="block p-2 rounded hover:bg-gray-800"
-        >
-          Alerts
-        </NavLink>
-        
-        <NavLink
-          to="/areas"
-          className="block p-2 rounded hover:bg-gray-800"
-        >
-          areas
-        </NavLink>
+        <button className="w-full text-left px-4 py-3 rounded-lg hover:bg-gray-100">
+          ❤️ Saved Homes
+        </button>
 
-      </nav>
+      </div>
 
     </aside>
   );
